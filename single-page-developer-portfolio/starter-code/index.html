@@ -1,88 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
 
-  adamkeyes
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo">adamkeyes</a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-github.svg" alt="Github"></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin"></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  Nice to meet you! I'm Adam Keyes.
+  <main id="main-content" tabindex="-1">
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero__image">
+        <img src="./assets/images/hero-image.jpg" alt="Portrait of Adam Keyes" />
+      </div>
+      <div class="hero__text">
+        <h1 class="hero__title">Nice to meet you! I'm Adam Keyes.</h1>
+        <p class="hero__description">
+          Based in the UK, I'm a front-end developer passionate about
+          building accessible web apps that users love.
+        </p>
+        <a href="#contact" class="btn btn--primary">Contact me</a>
+      </div>
+    </section>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+    <section id="skills" class="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="skills__heading">Skills</h2>
+      <article class="skills__item">
+        <h3 class="skills__title">HTML</h3>
+        <p class="skills__description">4 Years Experience</p>
+      </article>
+      <article class="skills__item">
+        <h3 class="skills__title">CSS</h3>
+        <p class="skills__description">4 Years Experience</p>
+      </article>
+      <article class="skills__item">
+        <h3 class="skills__title">JavaScript</h3>
+        <p class="skills__description">4 Years Experience</p>
+      </article>
+      <article class="skills__item">
+        <h3 class="skills__title">React</h3>
+        <p class="skills__description">3 Years Experience</p>
+      </article>
+      <article class="skills__item">
+        <h3 class="skills__title">Sass</h3>
+        <p class="skills__description">3 Years Experience</p>
+      </article>
+    </section>
 
-  Contact me
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <div class="projects__header">
+        <h2 id="projects-heading" class="projects__title">Projects</h2>
+        <a href="./" class="btn btn--primary">Contact me</a>
+      </div>
 
-  HTML
-  4 Years Experience
+      <ul class="projects__list">
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-1-small.webp" alt="Design portfolio" class="projects__image" />
+          <h3 class="projects__title">Design portfolio</h3>
+          <p class="projects__description">HTML CSS</p>
+          <ul class="projects__links" aria-label="Links for Design portfolio project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-2-small.webp" alt="E-learning landing page" class="projects__image" />
+          <h3 class="projects__title">E-learning landing page</h3>
+          <p class="projects__description">HTML CSS</p>
+          <ul class="projects__links" aria-label="Links for E-learning landing page project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-3-small.webp" alt="Todo web app" class="projects__image" />
+          <h3 class="projects__title">Todo web app</h3>
+          <p class="projects__description">HTML CSS JavaScript</p>
+          <ul class="projects__links" aria-label="Links for Todo web app project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-4-small.webp" alt="Entertainment web app" class="projects__image" />
+          <h3 class="projects__title">Entertainment web app</h3>
+          <p class="projects__description">HTML CSS JavaScript</p>
+          <ul class="projects__links" aria-label="Links for Entertainment web app project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-5-small.webp" alt="Memory Game" class="projects__image" />
+          <h3 class="projects__title">Memory Game</h3>
+          <p class="projects__description">HTML CSS JavaScript</p>
+          <ul class="projects__links" aria-label="Links for Memory Game project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+        <li class="projects__item">
+          <img src="./assets/images/thumbnail-project-6-small.webp" alt="Art gallery showcase" class="projects__image" />
+          <h3 class="projects__title">Art gallery showcase</h3>
+          <p class="projects__description">HTML CSS JavaScript</p>
+          <ul class="projects__links" aria-label="Links for Art gallery showcase project">
+            <li><a href="#" class="projects__link">View project</a></li>
+            <li><a href="#" class="projects__link">View code</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-  CSS
-  4 Years Experience
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="contact__title">Contact</h2>
+      <p class="contact__description">
+        I would love to hear about your project and how I could help. Please
+        fill in the form, and I’ll get back to you as soon as possible.
+      </p>
+      <form action="#" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Name</label>
+          <input type="text" id="name" name="name" class="form__input" required />
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" name="email" class="form__input" required />
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Message</label>
+          <textarea id="message" name="message" class="form__textarea" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send message</button>
+      </form>
+    </section>
+  </main>
 
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+  <footer class="footer" role="contentinfo">
+    <nav class="nav" aria-label="Footer navigation">
+      <a href="/" class="nav__logo">adamkeyes</a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-github.svg" alt="Github" /></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor" /></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin" /></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter" /></a></li>
+      </ul>
+    </nav>
+  </footer>
 
 </body>
 </html>
