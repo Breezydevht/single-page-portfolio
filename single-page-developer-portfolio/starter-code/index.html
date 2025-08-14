@@ -4,39 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./css/baseconfig.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/skills.css" />
+  <link rel="stylesheet" href="./css/projects.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
-<body>
+<body class="body">
 
   <header class="header" role="banner">
     <nav class="nav" aria-label="Main navigation">
-      <a href="/" class="nav__logo">adamkeyes</a>
+      <div class="nav__container">
+        <a href="/" class="nav__logo">adamkeyes</a>
       <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-github.svg" alt="Github"></a></li>
         <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a></li>
         <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin"></a></li>
         <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></a></li>
       </ul>
+      </div>
     </nav>
   </header>
 
-  <main id="main-content" tabindex="-1">
+  <main id="main-content" class="main-content" role="main">
+
     <section id="hero" class="hero" aria-label="Introduction">
-      <div class="hero__image">
-        <img src="./assets/images/hero-image.jpg" alt="Portrait of Adam Keyes" />
-      </div>
+        <div class="hero__pattern hero__pattern_1">
+          <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
+        </div>
+         <div class="hero__pattern hero__pattern_2">
+          <img src="./assets/images/pattern-circle.svg" alt="" aria-hidden="true" />
+        </div> 
+      <div class="hero__content">
+        <div class="hero__image">
+          <img src="./assets/images/image-profile-mobile.webp" alt="Portrait of Adam Keyes" />
+        </div> 
+      
       <div class="hero__text">
-        <h1 class="hero__title">Nice to meet you! I'm Adam Keyes.</h1>
+        <h1 class="hero__title">Nice to meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
         <p class="hero__description">
           Based in the UK, I'm a front-end developer passionate about
           building accessible web apps that users love.
         </p>
-        <a href="#contact" class="btn btn--primary">Contact me</a>
+        <button class="btn btn--primary"><a href="#contact">CONTACT ME</a></button>
+        </div>
       </div>
     </section>
 
+    <hr class="divider" />
+
     <section id="skills" class="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading" class="skills__heading">Skills</h2>
+      
       <article class="skills__item">
         <h3 class="skills__title">HTML</h3>
         <p class="skills__description">4 Years Experience</p>
@@ -57,12 +78,15 @@
         <h3 class="skills__title">Sass</h3>
         <p class="skills__description">3 Years Experience</p>
       </article>
+
     </section>
+
+    <hr class="divider" />
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
       <div class="projects__header">
         <h2 id="projects-heading" class="projects__title">Projects</h2>
-        <a href="./" class="btn btn--primary">Contact me</a>
+        <button class="btn btn--primary"><a href="#contact">CONTACT ME</a></button>
       </div>
 
       <ul class="projects__list">
@@ -123,6 +147,8 @@
       </ul>
     </section>
 
+    <hr class="divider" />
+
     <section id="contact" class="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading" class="contact__title">Contact</h2>
       <p class="contact__description">
@@ -146,6 +172,8 @@
       </form>
     </section>
   </main>
+
+  <hr class="divider" />
 
   <footer class="footer" role="contentinfo">
     <nav class="nav" aria-label="Footer navigation">

@@ -1,0 +1,41 @@
+/*style css*/
+@import './baseconfig.css';
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 153.99px;
+    gap: 20px;
+    margin: 20px 0 0 0;
+}
+
+.nav__logo {
+    font-size: var(--fh-m);
+    color: var(--clr-white);
+    line-height: 32px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

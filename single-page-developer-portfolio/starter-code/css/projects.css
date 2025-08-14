@@ -1,0 +1,17 @@
+@import url("./baseconfig.css");
+
+.projects__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.projects__title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+}
