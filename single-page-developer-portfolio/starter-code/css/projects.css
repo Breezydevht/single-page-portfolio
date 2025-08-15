@@ -1,5 +1,10 @@
 @import url("./baseconfig.css");
 
+.projects {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
 .projects__header {
     display: flex;
     flex-direction: row;
@@ -14,4 +19,44 @@
     font-weight: bold;
     line-height: 40px;
     letter-spacing: -1.14px;
+}
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+}
+
+.projects__item {
+    padding: 1rem;
+}
+
+.projects__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.projects__description {
+    font-size: 16px;
+    color: var(--clr-gray);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.projects__links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.projects__links a{
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 16px;
+    border-bottom: 2px solid var(--clr-green);
+    padding-bottom: 0.6rem;
 }

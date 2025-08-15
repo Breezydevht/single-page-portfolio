@@ -28,3 +28,19 @@
     line-height: 26px;
     color: var(--clr-gray);
 }
+
+@media (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .skills__item {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 1rem;
+    }
+}

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/skills.css" />
   <link rel="stylesheet" href="./css/projects.css" />
   <link rel="stylesheet" href="./css/contact.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/contactForm.css" />
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body class="body">
@@ -32,24 +32,52 @@
   <main id="main-content" class="main-content" role="main">
 
     <section id="hero" class="hero" aria-label="Introduction">
-        <div class="hero__pattern hero__pattern_1">
+       <!--  <div class="hero__pattern hero__pattern_1">
           <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
         </div>
          <div class="hero__pattern hero__pattern_2">
           <img src="./assets/images/pattern-circle.svg" alt="" aria-hidden="true" />
-        </div> 
+        </div>
+        <div class="hero__pattern hero__pattern_3">
+          <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
+        </div> -->
       <div class="hero__content">
+        
         <div class="hero__image">
-          <img src="./assets/images/image-profile-mobile.webp" alt="Portrait of Adam Keyes" />
-        </div> 
+          <picture>
+            <!-- Imagen para pantallas grandes (desktop) -->
+            <source
+              srcset="./assets/images/image-profile-desktop.webp"
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+
+            <!-- Imagen para pantallas medianas (tablet) -->
+            <source
+              srcset="./assets/images/image-profile-tablet.webp"
+              media="(min-width: 640px)"
+              type="image/webp"
+            />
+
+            <!-- Imagen por defecto (móvil) -->
+            <img
+              src="./assets/images/image-profile-mobile.webp"
+              alt="Adam Keyes profile picture"
+              width="100%"
+              height="auto"
+            />
+          </picture>
+
+        </div>
       
       <div class="hero__text">
         <h1 class="hero__title">Nice to meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
+        <h1 class="hero__title_tablet">Nice to <br /> meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
         <p class="hero__description">
           Based in the UK, I'm a front-end developer passionate about
           building accessible web apps that users love.
         </p>
-        <button class="btn btn--primary"><a href="#contact">CONTACT ME</a></button>
+        <button class="btn btn--primary btn__hero"><a href="#contact">CONTACT ME</a></button>
         </div>
       </div>
     </section>
@@ -68,6 +96,10 @@
       </article>
       <article class="skills__item">
         <h3 class="skills__title">JavaScript</h3>
+        <p class="skills__description">4 Years Experience</p>
+      </article>
+      <article class="skills__item">
+        <h3 class="skills__title">Accessibility</h3>
         <p class="skills__description">4 Years Experience</p>
       </article>
       <article class="skills__item">
@@ -90,15 +122,17 @@
       </div>
 
       <ul class="projects__list">
+
         <li class="projects__item">
           <img src="./assets/images/thumbnail-project-1-small.webp" alt="Design portfolio" class="projects__image" />
           <h3 class="projects__title">Design portfolio</h3>
-          <p class="projects__description">HTML CSS</p>
+          <p class="projects__description"><span>HTML</span><span>CSS</span></p>
           <ul class="projects__links" aria-label="Links for Design portfolio project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
         </li>
+
         <li class="projects__item">
           <img src="./assets/images/thumbnail-project-2-small.webp" alt="E-learning landing page" class="projects__image" />
           <h3 class="projects__title">E-learning landing page</h3>
@@ -147,7 +181,9 @@
       </ul>
     </section>
 
-    <hr class="divider" />
+  </main>
+
+  <footer class="footer" role="contentinfo">
 
     <section id="contact" class="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading" class="contact__title">Contact</h2>
@@ -157,25 +193,22 @@
       </p>
       <form action="#" novalidate>
         <div class="form__group">
-          <label for="name" class="form__label">Name</label>
-          <input type="text" id="name" name="name" class="form__input" required />
+          <input type="text" id="name" name="name" class="form__input"  placeholder="NAME" required />
         </div>
         <div class="form__group">
-          <label for="email" class="form__label">Email</label>
-          <input type="email" id="email" name="email" class="form__input" required />
+          <input type="email" id="email" name="email" class="form__input" placeholder="EMAIL" required />
         </div>
         <div class="form__group">
-          <label for="message" class="form__label">Message</label>
-          <textarea id="message" name="message" class="form__textarea" required></textarea>
+          <textarea id="message" name="message" class="form__textarea" placeholder="MESSAGE" required></textarea>
         </div>
-        <button type="submit" class="btn btn--primary">Send message</button>
+        <div class="form__btn">
+          <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
+        </div>
       </form>
     </section>
-  </main>
 
-  <hr class="divider" />
+    <hr class="divider" />
 
-  <footer class="footer" role="contentinfo">
     <nav class="nav" aria-label="Footer navigation">
       <a href="/" class="nav__logo">adamkeyes</a>
       <ul class="nav__list">
