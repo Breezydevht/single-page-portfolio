@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/hero.css" />
   <link rel="stylesheet" href="./css/skills.css" />
   <link rel="stylesheet" href="./css/projects.css" />
-  <link rel="stylesheet" href="./css/contact.css" />
   <link rel="stylesheet" href="./css/contactForm.css" />
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
@@ -31,6 +30,8 @@
 
   <main id="main-content" class="main-content" role="main">
 
+    <!-- Hero section -->
+
     <section id="hero" class="hero" aria-label="Introduction">
        <!--  <div class="hero__pattern hero__pattern_1">
           <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
@@ -50,14 +51,14 @@
               srcset="./assets/images/image-profile-desktop.webp"
               media="(min-width: 1024px)"
               type="image/webp"
-            />
+            >
 
             <!-- Imagen para pantallas medianas (tablet) -->
             <source
               srcset="./assets/images/image-profile-tablet.webp"
-              media="(min-width: 640px)"
+              media="(min-width: 768px)"
               type="image/webp"
-            />
+            >
 
             <!-- Imagen por defecto (móvil) -->
             <img
@@ -65,14 +66,14 @@
               alt="Adam Keyes profile picture"
               width="100%"
               height="auto"
-            />
+            >
           </picture>
-
         </div>
       
       <div class="hero__text">
-        <h1 class="hero__title">Nice to meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
-        <h1 class="hero__title_tablet">Nice to <br /> meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
+        <h1 class="hero__title_phone">Nice to meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
+        <h1 class="hero__title_tablet">Nice to<br /> meet you! I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
+        <h1 class="hero__title_desktop">Nice to meet you!<br />I'm <span class="hero__highlight">Adam Keyes</span>.</h1>
         <p class="hero__description">
           Based in the UK, I'm a front-end developer passionate about
           building accessible web apps that users love.
@@ -82,9 +83,13 @@
       </div>
     </section>
 
-    <hr class="divider" />
+    <hr class="divider__line_skill" />
+
+    <!-- Skills section -->
 
     <section id="skills" class="skills" aria-labelledby="skills-heading">
+
+      
       
       <article class="skills__item">
         <h3 class="skills__title">HTML</h3>
@@ -113,7 +118,7 @@
 
     </section>
 
-    <hr class="divider" />
+    <hr class="divider__line_skill" />
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
       <div class="projects__header">
@@ -124,26 +129,51 @@
       <ul class="projects__list">
 
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-1-small.webp" alt="Design portfolio" class="projects__image" />
+
+          <div class="projects__image_container" id="project_dinamic">
+            <img src="./assets/images/thumbnail-project-1-small.webp" alt="Design portfolio" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Design portfolio project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
+    
           <h3 class="projects__title">Design portfolio</h3>
           <p class="projects__description"><span>HTML</span><span>CSS</span></p>
           <ul class="projects__links" aria-label="Links for Design portfolio project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
+
         </li>
 
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-2-small.webp" alt="E-learning landing page" class="projects__image" />
+
+          <div class="projects__image_container" id="project_static">
+            <img src="./assets/images/thumbnail-project-2-small.webp" alt="E-learning landing page" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Design portfolio project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
+
           <h3 class="projects__title">E-learning landing page</h3>
           <p class="projects__description">HTML CSS</p>
           <ul class="projects__links" aria-label="Links for E-learning landing page project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
+
         </li>
+
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-3-small.webp" alt="Todo web app" class="projects__image" />
+          <div class="projects__image_container" id="project_static">
+            <img src="./assets/images/thumbnail-project-3-small.webp" alt="Todo web app" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Todo web app project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
           <h3 class="projects__title">Todo web app</h3>
           <p class="projects__description">HTML CSS JavaScript</p>
           <ul class="projects__links" aria-label="Links for Todo web app project">
@@ -151,8 +181,16 @@
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
         </li>
+
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-4-small.webp" alt="Entertainment web app" class="projects__image" />
+          <div class="projects__image_container">
+            <img src="./assets/images/thumbnail-project-4-small.webp" alt="Entertainment web app" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Entertainment web app project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
+          
           <h3 class="projects__title">Entertainment web app</h3>
           <p class="projects__description">HTML CSS JavaScript</p>
           <ul class="projects__links" aria-label="Links for Entertainment web app project">
@@ -160,8 +198,16 @@
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
         </li>
+
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-5-small.webp" alt="Memory Game" class="projects__image" />
+          <div class="projects__image_container">
+            <img src="./assets/images/thumbnail-project-5-small.webp" alt="Memory Game" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Memory Game project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
+
           <h3 class="projects__title">Memory Game</h3>
           <p class="projects__description">HTML CSS JavaScript</p>
           <ul class="projects__links" aria-label="Links for Memory Game project">
@@ -169,8 +215,16 @@
             <li><a href="#" class="projects__link">View code</a></li>
           </ul>
         </li>
+
         <li class="projects__item">
-          <img src="./assets/images/thumbnail-project-6-small.webp" alt="Art gallery showcase" class="projects__image" />
+          <div class="projects__image_container">
+            <img src="./assets/images/thumbnail-project-6-small.webp" alt="Art gallery showcase" class="projects__image" />
+            <ul class="projects__links_hover" aria-label="Links for Art gallery showcase project">
+              <li><a href="#" class="projects__link">VIEW PROJECT</a></li>
+              <li><a href="#" class="projects__link">VIEW CODE</a></li>
+            </ul>
+          </div>
+          
           <h3 class="projects__title">Art gallery showcase</h3>
           <p class="projects__description">HTML CSS JavaScript</p>
           <ul class="projects__links" aria-label="Links for Art gallery showcase project">
@@ -186,28 +240,45 @@
   <footer class="footer" role="contentinfo">
 
     <section id="contact" class="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading" class="contact__title">Contact</h2>
-      <p class="contact__description">
+
+      <div class="contact__content">
+        <h2 id="contact-heading" class="contact__title">Contact</h2>
+        <p class="contact__description">
         I would love to hear about your project and how I could help. Please
         fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-      <form action="#" novalidate>
+        </p>
+      </div>
+      
+      <form action="" class="form" id="form" novalidate>
         <div class="form__group">
-          <input type="text" id="name" name="name" class="form__input"  placeholder="NAME" required />
+            <input type="text" id="name" name="name" class="form__input"  placeholder="NAME" required />
+            <svg class="name-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+
+          <span class="form__error" id="name-error">Sorry, invalid format here</span>
         </div>
         <div class="form__group">
           <input type="email" id="email" name="email" class="form__input" placeholder="EMAIL" required />
+          <svg class="name-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+          <span class="form__error" id="email-error">Sorry, invalid format here</span>
         </div>
         <div class="form__group">
           <textarea id="message" name="message" class="form__textarea" placeholder="MESSAGE" required></textarea>
+          <svg class="name-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+          <span class="form__error" id="email-error">Sorry, invalid format here</span>
         </div>
         <div class="form__btn">
-          <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
+          <button type="submit" id="buttonSubmit" class="btn btn--primary">SEND MESSAGE</button>
         </div>
       </form>
     </section>
 
-    <hr class="divider" />
+    <hr class="divider__line_footer" />
 
     <nav class="nav" aria-label="Footer navigation">
       <a href="/" class="nav__logo">adamkeyes</a>
@@ -219,6 +290,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="./js/formFunction.js"></script>
 
 </body>
 </html>

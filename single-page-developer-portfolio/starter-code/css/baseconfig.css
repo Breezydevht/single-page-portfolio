@@ -69,9 +69,45 @@ button {
     padding: 0;
 }
 
-.divider {
+.divider__line_skill {
     width: 100%;
     height: 1px;
     background-color: var(--clr-dark-gray);
-    margin: 2rem 0;
+    position: relative;
+    top: -101px;
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+.divider__line_footer {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-dark-gray);
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .divider__line_skill {
+        width: 100%;
+        max-width: 708px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .divider__line_skill {
+        width: 100%;
+        max-width: 1110px;
+    }
 }
