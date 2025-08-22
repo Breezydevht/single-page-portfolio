@@ -19,10 +19,10 @@
       <div class="nav__container">
         <a href="/" class="nav__logo">adamkeyes</a>
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-github.svg" alt="Github"></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin"></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="github__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="frontendMentor__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="linkedin__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="twitter__icon"></div></a></li>
       </ul>
       </div>
     </nav>
@@ -33,17 +33,17 @@
     <!-- Hero section -->
 
     <section id="hero" class="hero" aria-label="Introduction">
-       <!--  <div class="hero__pattern hero__pattern_1">
-          <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
-        </div>
-         <div class="hero__pattern hero__pattern_2">
-          <img src="./assets/images/pattern-circle.svg" alt="" aria-hidden="true" />
-        </div>
-        <div class="hero__pattern hero__pattern_3">
-          <img src="./assets/images/pattern-rings.svg" alt="" aria-hidden="true" />
-        </div> -->
+
       <div class="hero__content">
-        
+
+        <div class="hero__patterns_1">
+          <img src="./assets/images/pattern-rings.svg" alt="" class="hero__pattern hero__pattern--left">
+        </div>
+
+        <div class="hero__patterns">
+          <img src="./assets/images/pattern-circle.svg" alt="" class="hero__pattern hero__pattern--right">
+        </div>
+
         <div class="hero__image">
           <picture>
             <!-- Imagen para pantallas grandes (desktop) -->
@@ -89,8 +89,6 @@
 
     <section id="skills" class="skills" aria-labelledby="skills-heading">
 
-      
-      
       <article class="skills__item">
         <h3 class="skills__title">HTML</h3>
         <p class="skills__description">4 Years Experience</p>
@@ -118,12 +116,18 @@
 
     </section>
 
+    <div class="skill__patterns">
+      <img src="./assets/images/pattern-rings.svg" alt="" class="skill__pattern skill__pattern--ring">
+    </div>
+
     <hr class="divider__line_skill" />
+
+    <!-- Projects section -->
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
       <div class="projects__header">
         <h2 id="projects-heading" class="projects__title">Projects</h2>
-        <button class="btn btn--primary"><a href="#contact">CONTACT ME</a></button>
+        <button class="btn btn--primary btn__hero"><a href="#contact">CONTACT ME</a></button>
       </div>
 
       <ul class="projects__list">
@@ -138,7 +142,7 @@
             </ul>
           </div>
     
-          <h3 class="projects__title">Design portfolio</h3>
+          <h3 class="projects__title_description">Design portfolio</h3>
           <p class="projects__description"><span>HTML</span><span>CSS</span></p>
           <ul class="projects__links" aria-label="Links for Design portfolio project">
             <li><a href="#" class="projects__link">View project</a></li>
@@ -157,8 +161,8 @@
             </ul>
           </div>
 
-          <h3 class="projects__title">E-learning landing page</h3>
-          <p class="projects__description">HTML CSS</p>
+          <h3 class="projects__title_description">E-learning landing page</h3>
+          <p class="projects__description"><span>HTML</span><span>CSS</span></p>
           <ul class="projects__links" aria-label="Links for E-learning landing page project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
@@ -174,8 +178,8 @@
               <li><a href="#" class="projects__link">VIEW CODE</a></li>
             </ul>
           </div>
-          <h3 class="projects__title">Todo web app</h3>
-          <p class="projects__description">HTML CSS JavaScript</p>
+          <h3 class="projects__title_description">Todo web app</h3>
+          <p class="projects__description"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
           <ul class="projects__links" aria-label="Links for Todo web app project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
@@ -191,8 +195,8 @@
             </ul>
           </div>
           
-          <h3 class="projects__title">Entertainment web app</h3>
-          <p class="projects__description">HTML CSS JavaScript</p>
+          <h3 class="projects__title_description">Entertainment web app</h3>
+          <p class="projects__description"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
           <ul class="projects__links" aria-label="Links for Entertainment web app project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
@@ -208,8 +212,8 @@
             </ul>
           </div>
 
-          <h3 class="projects__title">Memory Game</h3>
-          <p class="projects__description">HTML CSS JavaScript</p>
+          <h3 class="projects__title_description">Memory Game</h3>
+          <p class="projects__description"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
           <ul class="projects__links" aria-label="Links for Memory Game project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
@@ -225,8 +229,8 @@
             </ul>
           </div>
           
-          <h3 class="projects__title">Art gallery showcase</h3>
-          <p class="projects__description">HTML CSS JavaScript</p>
+          <h3 class="projects__title_description">Art gallery showcase</h3>
+          <p class="projects__description"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
           <ul class="projects__links" aria-label="Links for Art gallery showcase project">
             <li><a href="#" class="projects__link">View project</a></li>
             <li><a href="#" class="projects__link">View code</a></li>
@@ -273,21 +277,27 @@
           <span class="form__error" id="email-error">Sorry, invalid format here</span>
         </div>
         <div class="form__btn">
-          <button type="submit" id="buttonSubmit" class="btn btn--primary">SEND MESSAGE</button>
+          <button type="submit" id="buttonSubmit" class="btn__form">SEND MESSAGE</button>
         </div>
       </form>
     </section>
 
+    <div class="footer__patterns">
+      <img src="./assets/images/pattern-rings.svg" alt="" class="footer__pattern footer__pattern--ring">
+    </div>
+
     <hr class="divider__line_footer" />
 
-    <nav class="nav" aria-label="Footer navigation">
-      <a href="/" class="nav__logo">adamkeyes</a>
+    <nav class="footer__nav" aria-label="Main navigation">
+      <div class="footer__nav__container">
+        <a href="/" class="nav__logo">adamkeyes</a>
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-github.svg" alt="Github" /></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor" /></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin" /></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter" /></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="github__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="frontendMentor__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="linkedin__icon"></div></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><div class="twitter__icon"></div></a></li>
       </ul>
+      </div>
     </nav>
   </footer>
 

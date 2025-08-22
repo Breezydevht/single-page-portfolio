@@ -2,9 +2,38 @@
 
 .hero {
     position: relative;
+    z-index: 1;
     overflow: hidden;
-    top: -101px;
-    z-index: 0;
+}
+
+.hero__patterns_1 {
+    position: absolute;
+    inset: 0; /* ocupa todo el hero */
+    pointer-events: none; /* que no interfiera con clicks */
+    z-index: -1;
+}
+
+.hero__patterns {
+    position: absolute;
+    inset: 0; /* ocupa todo el hero */
+    pointer-events: none; /* que no interfiera con clicks */
+    z-index: 1;
+}
+
+.hero__pattern {
+    position: absolute;
+    max-width: 530px;
+    max-height: 129px;
+}
+
+.hero__pattern--left {
+    top: 124px;
+    left: -342px;
+}
+
+.hero__pattern--right {
+    bottom: 300px;
+    left: 284px;
 }
 
 .hero__content {
@@ -17,6 +46,7 @@
     max-width: 343px;
     margin: 0 auto;
     z-index: 1; /* Encima de los patterns */
+    position: relative;
 }
 
 .hero__image img {
@@ -29,6 +59,10 @@
 .hero__text {
     color: var(--color-white);
     width: clamp(300px, 100%, 343px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .hero__title_tablet {
@@ -64,6 +98,7 @@
 .btn > a {
     color: var(--clr-white);
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn {
@@ -76,16 +111,22 @@
     border-bottom: 2px solid var(--clr-green);
     background-color: transparent;
     transition: all 0.3s ease-in-out;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn > a:hover {
+    color: var(--clr-green);
 }
 
 
 @media (min-width: 768px) {
     .hero__content {
         flex-direction: row-reverse;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         margin: 0 auto;
-        max-width: 708px;
+        max-width: 768px;
     }
 
     .hero__image img {
@@ -104,10 +145,9 @@
         justify-content: center;
         align-items: flex-start;
         text-align: left;
-        width: 100%;
         max-width: 445px;
-        max-height: 449px;
         position: relative;
+        top: 70px;
         z-index: 1; /* Encima de los patterns */
     }
     .hero__title_phone {
@@ -119,9 +159,8 @@
         font-weight: bold;
         line-height: 72px;
         letter-spacing: -2.05px;
-        max-width: 443px;
-        max-height: 233px;
-        margin: 0;
+        width: 443px;
+        height: 233px;
         padding: 0;
         display: block;
     }
@@ -139,22 +178,27 @@
         color: var(--clr-gray);
         max-width: 445px;
         max-height: 96px;
-        top: 80px
       }
 
-      .hero__text > .btn--primary {
-        position: relative;
-        top: 80px;
-      }
+    .hero__pattern--left {
+        top: 70px;
+        left: -265px;
+    }
+
+    .hero__pattern--right {
+        top: 470px;
+        left: 710px;
+    }
+
 }
 
 @media (min-width: 1024px) {
     .hero__content {
+        display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
-        max-width: 1110px;
+        margin: 0 auto 5.7rem;
+        max-width: 1024px;
     }
 
     .hero__title_tablet {
@@ -162,17 +206,32 @@
     }
 
     .hero__title_desktop {
-        font-size: 88px;
+        font-size: 4.8rem;
         font-weight: bold;
         line-height: 88px;
         letter-spacing: -2.5px;
-        max-width: 706px;
-        max-height: 303px;
+        width: 706px;
+        height: auto;
         margin: 0;
         padding: 0;
         display: block;
     }
 
+    .hero__image {
+        display: flex;
+        justify-content: flex-end;
+        flex: auto;
+        width: 100%;
+    }
+
+    .hero__image img {
+        width: 100%;
+        height: auto;
+        max-width: 445px;
+        max-height: 720px;
+        object-fit: cover;
+    }
+    
     .hero__text {
         display: flex;
         flex-direction: column;
@@ -180,21 +239,28 @@
         align-items: flex-start;
         text-align: left;
         width: 100%;
-        max-width: 706px;
-        max-height: 303px;
+        max-width: 445px;
+        max-height: 449px;
         position: relative;
+        top: 50px;
         z-index: 1; /* Encima de los patterns */
-        left: 2rem;
-        top: 2.5rem;
     }
 
-    .hero__image img {
-        width: 100%;
-        max-width: 445px;
-        max-height: 720px;
-        height: auto;
-        object-fit: cover;
-        z-index: 0;
+    .hero__description {
+        margin: 1rem auto;
     }
-    
+
+    .hero__text > .btn--primary {
+        margin: 3rem 0 0 0;
+    }
+
+    .hero__pattern--right {
+        top: 500px;
+        left: 510px;
+    }
+
+    .hero__pattern--left {
+        top: 120px;
+        left: -265px;
+    }
 }
