@@ -1,0 +1,43 @@
+.twitter__icon {
+    width: 24px;
+    height: 24px;
+    mask: url('/src/assets/images/icon/icon-twitter.svg') no-repeat center;
+    mask-size: contain;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease;
+}
+
+.github__icon {
+    width: 24px;
+    height: 24px;
+    mask: url('/src/assets/images/icon/icon-github.svg') no-repeat center;
+    mask-size: contain;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease;
+}
+
+.frontendMentor__icon {
+    width: 24px;
+    height: 24px;
+    mask: url('/src/assets/images/icon/icon-frontend-mentor.svg') no-repeat center;
+    mask-size: contain;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease;
+}
+
+.linkedin__icon {
+    width: 24px;
+    height: 24px;
+    mask: url('/src/assets/images/icon/icon-linkedin.svg') no-repeat center;
+    mask-size: contain;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease;
+}
+
+.github__icon:hover,
+.frontendMentor__icon:hover,
+.linkedin__icon:hover,
+.twitter__icon:hover {
+    cursor: pointer;
+    background-color: var(--clr-green);
+}
