@@ -1,14 +1,14 @@
 import patternRings from "@/assets/images/pattern/pattern-rings.svg"
 import patternCircles from "@/assets/images/pattern/pattern-circle.svg"
-function PatternRing() {
+function PatternRing({ className }) {
     return (
-        <img  src={patternRings} alt="Pattern Image 1" />
+        <img  src={patternRings} alt="Pattern Image 1" className={`${className}`} />
     );
 };
 
-function PatternCircle() {
+function PatternCircle({ className }) {
     return (
-        <img  src={patternCircles} alt="Pattern Image 2" />
+        <img  src={patternCircles} alt="Pattern Image 2" className={`${className}`} />
     );
 };
 
