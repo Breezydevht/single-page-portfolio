@@ -1,0 +1,17 @@
+.btn {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--clr-white);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-green);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-green);
+}
